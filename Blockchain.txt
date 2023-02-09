@@ -1,0 +1,173 @@
+Bitcoin é uma moeda digital descentralizada. Isso significa que não é emitido por um banco central.
+Também não possui uma única entidade controlando seu valor ou distribuição.
+
+Bitcoin é projetado para evitar falsificação ou duplicação de fundos.
+
+Ledgers
+Os Oxford Learner's Dictionaries definem um ledgers como "um livro ou documento eletrônico no qual um banco, uma empresa, etc. 
+registra o dinheiro que pagou e recebeu".
+Agora, os ledgers são frequentemente aplicativos com um banco de dados por trás deles. 
+Uma aplicação do cliente se conecta ao banco de dados principal, lê os dados atuais e envia atualizações. 
+No entanto, isso está sujeito a adulteração ou perda de dados. 
+Com acesso direto ao arquivo de origem, o arquivo pode ser editado e trocado sem que o usuário final perceba.
+
+Distribued Ledgers
+Em vez de ter uma única cópia dos dados principais, 
+um livro-razão distribuído compartilha o conjunto completo de dados entre vários participantes da rede (membros); 
+cada membro tem uma cópia completa dos dados.
+
+Isso tem vários benefícios. Nenhum ponto único possui o arquivo de dados mestre, portanto, nenhum ponto único pode corromper o arquivo de dados mestre. 
+Se você perder um dos pontos finais, o restante dos pontos finais ainda manterá todos os dados. E quando alguém tenta atualizar os dados em um ledger distribuído, 
+todos os outros pontos finais estão envolvidos no processo de aceitar ou rejeitar a atualização. 
+Em um ledgers distribuído, qualquer atualização deve ser acordada pelos outros, tornando-o muito difícil de hackear.
+
+Blockchain
+Blockchain é um ledger distribuído que adiciona imutabilidade. 
+Imutabilidade significa que uma vez que algo é escrito, não pode ser editado ou removido. 
+Com blockchain, os dados não podem ser modificados. 
+O histórico completo dos dados pode ser rastreado até o início do blockchain. 
+Blockchain é uma cadeia de transações, contidas em blocos, daí o nome blockchain.
+
+
+Cada vez que uma informação é alterada, em vez de atualizar o valor e perder de vista o que costumava ser, 
+o blockchain simplesmente adiciona um novo bloco que contém os novos dados, enquanto continua mantendo todos os dados antigos também.
+
+Descentralização
+
+Descentralização significa que cada membro de um blockchain tem uma cópia completa dos dados. 
+Cada membro com uma cópia dos dados protege contra agentes mal-intencionados, melhora a recuperação de desastres e promove alta disponibilidade.
+Quando cada membro tem uma cópia completa dos dados e as atualizações dos dados devem ser aprovadas pelos membros, os maus atores são interrompidos.
+ Se um membro ou usuário ilegítimo tentar excluir todo o blockchain de um membro, os outros membros retêm as informações, portanto, nenhum dado é perdido. 
+Se um mau ator tentar editar os dados históricos de um membro, os outros membros se recusarão a autenticá-lo. 
+Essa negação impede que informações falsas entrem no blockchain.
+
+Cada membro tem uma cópia completa do conjunto de dados. Se uma parte da rede cair e derrubar um membro com ela, 
+os membros restantes poderão validar e aceitar atualizações na estrutura de dados. 
+Quando a rede estiver de volta, esse membro isolado será atualizado com o conjunto de dados mais recente.
+
+
+Transparência
+
+Outra peça da blockchain que aumenta a confiança é a transparência. 
+Transparência significa que as informações armazenadas no blockchain são visíveis para os membros do blockchain.
+lockchain mantém um registro completo de todas as transações, e esse registro está disponível para todos os membros, 
+tornando o blockchain uma tecnologia muito transparente.
+
+Imutabilidade
+
+Imutabilidade significa simplesmente que algo não pode ser editado ou alterado.
+Você pode atualizar as informações em um blockchain adicionando dados, que serão adicionados em um novo bloco. 
+No entanto, uma vez que um bloco faz parte da cadeia, as informações desse bloco não podem ser alteradas.
+
+Auditabilidade
+
+A auditabilidade é outro benefício do uso do blockchain. A auditabilidade fala de quão prontamente disponível e acessível algo é para auditar.
+Blockchain, contando com os outros benefícios já discutidos, é uma plataforma muito auditável.
+Com a imutabilidade do blockchain, um log de auditoria completo para cada interação é criado. 
+Isso pode ser compartilhado com um auditor, que sabe que os dados não foram comprometidos. 
+Os auditores também podem comparar os dados entre dois membros para validar a autenticidade dos dados.
+
+BLOCKCHAIN CORE CONCEPTS
+
+Blocos
+
+Blocos são a unidade básica de informação em blockchain. 
+Lembre-se de que um conjunto de transações resulta em um novo bloco sendo criado e adicionado ao blockchain após o bloco anterior.
+Um bloco em si tem três componentes principais:
+- Transition Data - Os dados da transação são as informações reais relevantes para o blockchain. 
+As informações contidas dependerão em grande parte do objetivo da transação e do blockchain. 
+Blockchains financeiros podem ter uma adição de fundos. Os blockchains da cadeia de suprimentos podem ver um item mudar de custódia em um ponto de remessa. 
+Blockchains de informações de saúde podem ver informações relacionadas a uma consulta médica.
+Independentemente do tipo de blockchain, todos os blocos também conterão metadados sobre a transação.
+
+- Cryptographic Hash - O bloco também contém um hash criptográfico do bloco anterior na blockchain. 
+Um hash criptográfico é uma string única de caracteres que só pode ser criada usando as informações do bloco e a chave cifrada. 
+O hash é único, de modo que nenhum outro bloco, combinado com a chave, produziria o mesmo hash. 
+Além disso, se algum dos dados fosse alterado no bloco, o hash também seria alterado. 
+Esse processo de criação de um hash criptográfico do bloco anterior está relacionado à imutabilidade do blockchain.
+
+Como o hash criptográfico é exclusivo para as informações exatas que estavam no bloco anterior quando o hash foi criado,
+qualquer tentativa de modificar as informações no bloco anterior faria com que o hash fosse alterado.
+Ao usar hashes criptográficos para o bloco anterior como parte do conjunto de dados para um novo bloco, 
+o blockchain torna quase impossível fazer uma alteração indetectável nos dados que já foram gravados na cadeia.
+
+- Timestamping - A terceira informação em um bloco em uma blockchain é um carimbo de data/hora. Os timestamps servem a dois propósitos. 
+O objetivo óbvio de um carimbo de data/hora é saber quando um bloco foi adicionado ao blockchain. 
+Devido ao timestamp fazer parte de um bloco, o hash criptográfico já discutido irá variar de acordo com o timestamp. 
+Uma segunda finalidade do timestamp é mostrar que os blocos estão em ordem cronológica de criação. Isso é importante para auditabilidade do blockchain, 
+porque garante que qualquer auditoria possa validar as informações do pedido anexadas ao blockchain.
+
+Pear-to-Pear Network
+
+O uso de uma rede ponto a ponto ajuda a tornar o blockchain tolerante a falhas, transparente e distribuído.
+
+A rede ponto a ponto também significa que uma interrupção de rede que afeta alguns dos pares não afetará todo o blockchain. 
+Em um relacionamento primário-secundário tradicional, a perda do primário causaria uma interrupção. 
+Em uma rede peer-to-peer, porque todos os membros são iguais, uma interrupção na rede não impede que o blockchain continue funcionando. 
+Depois que a interrupção for resolvida, os membros afetados podem entrar em contato com qualquer um dos outros membros da rede ponto a ponto 
+para se atualizarem com o conjunto de dados blockchain mais recente.
+
+Mecanismos de consenso
+
+A imutabilidade das blockchains está diretamente relacionada aos mecanismos de consenso. 
+Um mecanismo de consenso é um conjunto de regras estabelecidas pela blockchain que determina como todos os membros reconhecem uma adição de bloco válida.
+
+Mecanismos de consenso são como cada membro de um blockchain sabe que as informações que estão recebendo são informações válidas. 
+Sem um mecanismo de consenso, qualquer um poderia enviar uma atualização para o blockchain e a cadeia seria atualizada.
+Finalmente, os mecanismos de consenso permitem a natureza distribuída do blockchain. 
+Por meio dos mecanismos de consenso, os pares podem compartilhar atualizações no blockchain e garantir que todos na rede ponto a ponto 
+estejam usando o mesmo conjunto de dados.
+
+Exemplos de mecanismo
+
+Proof of work: é um mecanismo de consenso no qual os membros resolvem quebra-cabeças matemáticos. 
+O primeiro membro a resolver o quebra-cabeça é confiável e é capaz de criar o próximo bloco na blockchain. 
+Esse mecanismo de consenso prioriza o membro que se esforça mais para resolver um quebra-cabeça para determinar quem escreve o próximo bloco. 
+Embora um blockchain de prova de trabalho dê a cada membro uma oportunidade igual de criar o próximo bloco, pode ser um processo muito intensivo 
+(e, portanto, intensivo em energia).
+
+Proof of stake: quanto mais criptomoeda um membro tiver, mais confiança é dada a esse membro. 
+Com esse aumento de confiança, aumenta a probabilidade de ser o membro que cria o próximo bloco no blockchain. 
+A prova de participação consome muito menos recursos do que a prova de trabalho. 
+No entanto, a prova de participação não trata todos os membros igualmente. Em vez disso, ele se concentra em quais membros têm mais moedas.
+
+Smart contracts
+
+Outro conceito central do blockchain é um contrato inteligente. 
+Um Smart contracts é um contrato que é executado sem qualquer ação adicional exigida por um terceiro. 
+Com um Smart contracts, você estabelece os termos e condições do contrato. 
+Assim que os termos e condições do contrato forem atendidos no blockchain, o contrato será executado automaticamente, sem que você precise realizar nenhuma ação.
+
+Tipos de blockchain
+O tipo de blockchain determinará quão amplamente o blockchain é compartilhado e quem tem a capacidade de fazer atualizações no blockchain.
+
+Permissionless
+Um blockchain Permissionless, também conhecido como blockchain público, é um blockchain aberto. 
+Todas as informações em um blockchain sem permissão podem ser visualizadas por todos os membros, 
+e todos os membros têm o mesmo poder de fazer atualizações no blockchain.
+
+Como um blockchain Permissionless é público, qualquer pessoa pode se tornar um membro do blockchain, ler as informações e contribuir. 
+Um blockchain Permissionless é ótimo para colaboração ampla e irrestrita. No entanto, ele tem o mínimo de controle sobre quem pode ver quais informações.
+
+Permissioned
+
+Um blockchain Permissioned ou privado é um blockchain no qual a associação é controlada por uma autoridade central. 
+Apesar de ter uma autoridade central que determina quem está autorizado a ser membro do blockchain e fazer atualizações, 
+o princípio descentralizado do blockchain ainda se aplica.
+
+Um blockchain Permissioned permite que você aproveite o poder do blockchain enquanto também mantém as informações relevantes protegidas da exibição pública.
+Um blockchain Permissioned também permite que você controle quem é elegível para ser um membro do blockchain.
+
+Consortium
+
+Um blockchain de Consortium é um meio termo entre sem permissão e permissão. Um blockchain de Consortium ainda restringe o acesso ao blockchain, 
+mas tem uma autoridade central mais distribuída. Isso permite um conjunto de membros maior do que um blockchain autorizado, 
+enquanto ainda protege as informações da disponibilidade pública geral.
+
+
+As discussed early in this training, agriculture is a natural industry for blockchain. The ability to track an item from the farm where it was harvested all the way to the final destination gives consumers greater confidence in the manner and method in which items are harvested.
+
+With the use of smart contracts and channels (remember, channels are only available with Hyperledger Fabric), general information can be kept public while the details of individual negotiations can stay between the seller and purchaser for that contract. Payment can be transferred as soon as the shipment is received via smart contracts, removing the need for the payment to be held in escrow.
+
+
+

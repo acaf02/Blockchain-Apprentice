@@ -1,0 +1,101 @@
+pragma solidity ^0.4.17;    //especifica a versão da solidity que está sendo escrito no codigo
+
+contract Imbox {
+//class   name
+
+    string public message;
+// declara o tipo de variavel
+
+    function Inbox (string initialMessage) public {
+        message = initialMessage;
+
+    }
+    function setMessage(string newMessage)public {
+        message = newMessage;
+    }
+
+             nome função    tipo
+    function getMessage() public view returns (string){
+        return message;
+    }
+}
+
+
+common function types
+
+puclic   // qualquer um pode chamar essa função
+private  // apenas esse contrato pode chamar a função
+view     // retorna os dados e não modifica os dados do contrato
+constant // mesma coisa que view
+pure     // não modifica e nem lê os dados do contrato
+payable  // toda vez que alguém chamar a função significa que podemos tentar fazer a pessoa mandar dinheiro
+
+///////////
+function getMessage() public view returns (string){
+
+returns só funciona com view e constant
+
+////////
+
+Mocha
+
+it  // executar uma assertion individual em algo que queremos testar
+describe  // agrupar it functions
+beforeEach // executar parte do codigo
+
+//codigo teste
+class Car{
+    park(){
+        return 'stopped';
+    }
+    drive(){
+        return 'vroom';
+    }
+}
+let car;
+beforeEach(() =>{
+ car = new Car();
+});
+describe ('Car', () => {
+    it('can park', () =>{
+        assert.equal(car.park(),'stopped');
+    });
+    it ('can drive' , () => {
+        assert.equal(car.drive(), 'vroom');
+    });
+});
+////
+
+inbox = await new web3.eth.Contract(JSON.parse(interface))  // ensina o web qual metodo o contrato inbox tem
+    .deploy({ data: bytecode, arguments: ['Hi there!'] })  //fala para web3 que queremos implantar uma copia desse contrato
+    .send ({ from: accounts[0], gas: '1000000' });  // instrui web3 para mandar a transação que cira esse contrato
+
+/////////////
+
+basic solidity types
+
+address  // tem metodos ligados a mandar dinheiro
+string
+boll   //boolean
+int
+uint   //unsigned (não tem sinal de positivo ou negativo)
+fixed/ufixed   // número com decimal
+
+
+the msg variable
+
+msg.data  - data from the call ou transação
+msg.gas  - quantidade de gas que a função tem
+msg.sender  - address da pessoa que mandou uma transação ou call
+msg.value  -  quantidade de ether que foi enviada
+
+
+referece types
+
+fixes array - comprimento fixo, sempre no mesmo tipo
+
+dynamic array - pode mundar de comprimento, sempre do mesmo tipo
+
+mapping - coleçao de key, sempre do mesmo tipos, varias
+
+struct  - coleçao de key, tem diferentes tipos, singular 
