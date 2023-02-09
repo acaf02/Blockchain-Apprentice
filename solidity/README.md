@@ -1,4 +1,4 @@
-![image](https://blog.ergonrh.com.br/wp-content/uploads/2020/06/capa.png)
+![image](https://ccbc.org.br/wp-content/uploads/2020/04/Smart-Contracts-1080x389.jpg)
 ***
 :file_folder: :file_folder: :file_folder:
 
