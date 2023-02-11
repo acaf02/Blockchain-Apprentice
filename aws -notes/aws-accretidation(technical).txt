@@ -1,0 +1,342 @@
+VIDEO 1
+Computação em nuvem - é a entrega sob demanda de poder computacional, banco de dados, armazenamento, aplicativos e outros recursos de TI ple interner com o preço com pagamento conforme o uso.
+Beneficios:
+Agilidade
+Elasticidade
+Econimia de custos
+Implantação global em questão de minutos
+
+INFRAESTRUTURA GLOBAL DA AWS - VIDEO 2
+AWS oferece um amplo portifolio de produtos globais baseados na nuvem sob demanda,
+disponiveis em segundos, com preço com pagamento conforme o uso.
+
+AWS Regiões:
+*completamente isoladas umas das outras
+*determnados recursos viculados a regiões
+
+Cada região é geograficamente separada com varios locais isolados uns dos outros. conhecidos por Zonas de Disponibilidade
+
+Zonas Locais são uma especie de impantaçãode infrestrutura que posiciona a computação, o armazeamentos,etc perto do publico em geral.
+Zonas do Wavelength incorporam serviços de computação e armazenamento da AWS em redes 5g
+Locais do direct connect vincula sua rede a AWS, oferece locais em todo o mundo para arantir que voce possa fazer conexões perto da onde vc precisa
+CloudFront acelera distribuição do seu conteudo web estatitco e dinamico para seus usuarios. distribui por meio de pontos de presença em forma de locais Edge locations e regional caches.
+
+INTRODUÇÃO ÀS TECNOLOGIAS ESSENCIAIS - VIDEO 3
+
+Amazon EC2 - disponibiliza capacidade computacional segura e redimencionavel na nuvem.
+Amazon EC2 Auto Scaling - podem configurar gatilhos para aumentar  e diminuir o numeros de instancias.
+Elastic Load Balancing - distribui automaticamente o trafego dde entrada dos aplcativos em diversos destinos.
+Amazon Elastic Container Service - permite que cliente executem aplicativos em um cluster gerenciado de intancias.
+Amazon Elastic Kubemetes Service - permite a execução de aplicativos Kubernete no EC2 e AWS Fargate
+AWS Lambda - executa codigo se a necessidade de provisionar ou gereciar servidores.
+
+Beneficos EC2
+*Elasticidade - permite que os clientes aumente ou  diminuam a capacidade computacional em minutos.
+* Controle - clientes tem o completo controle sobre intancias, incluindo acesso- raiz ou de adimiistrador
+*fexibilidade- podem escolher diversas intancias,sistemas operacionas e pacotes de osftwers integrados.
+*confiavel - 
+*seguro
+economico
+*facil
+
+Tipos de instancias
+general purpose - fornecem equilibrio de recursos de computação, memoria e rede.
+compute optiiazed - ideal para aplicativos vinculados a computação que  se beneficiam de processadores de alta performance
+memory optimized- são projetadas para forncer desempenho rapido para cargas de trabalho que processam grandes conjuntos de dados na memoria
+accelerated computing- usam aceleradoes de hardware ou processadores de codigo para executar funções com processamentos de graficos, etc.
+storage optimized- são projetadas para cargas de trabalhos que exigem alto acesso seuqencial de leiura e gravação a conjuntos muito grandes.
+
+Amazon AMI - é uma imagem suportada e mantida pela AWS que fornece as informações necessarias para inciar uma instancia.
+
+Scaling na AES
+*inicie novas instancias antes do periodo de pico
+*use o monitoramento para aumetar a quantidade de forma programatica
+*dimensionamento automatico
+*pague pelos recursos necessarios, quando necessario
+
+Grupo do EC2 Auto Scaling
+*ajusta automaticamente a capacidade dos recursos
+*defina onde a a EC2 AS impanta recursos
+*especifique a amazon VPC e sub-redes
+
+Amzon ELB
+distribua automaticamento o trafego entre varias instacias do EC2
+*aumenta a disponibilidade e tolerancia a falhas
+*configure health checks
+* descarregamento de criptografia e descriptografia 
+*Tipo: application Load Balancer(camada do aplicativo), Network Load Balance (camada de rede) e Gateway Load Balancer(dispositivos virtuais de terceiros)
+
+TECNOLOGIAS ESSECIAIS : ARMAZENAMENTO
+
+Amazon Elastic Block Store - podem criar partições, formata-lo e inicializar seus sistemas operacionais, ele fornece volumes de armazenamentos em nivel de bloco
+Amazon S3 - armazenamento da internet, projetado para facilitar a computação em escala na web para desenvolvedores, usada para armazenar e recuperar qualquer quantidade de dado.
+Amazon S3 Glacier - fornece armazenamento seguro e duravel para arquivamento e backup
+AS Storage Gateway - fornece ntegração perfeita e segura entre ambiente de TI on-premises de uma organização e a infraetrutura de armazenamento da AWS
+Amazon Elastic File System -armazenamento de arquivos
+Amazon FSx - armazenamento de arquivos totalmente gerenciado desenvolvifo em qutro sistemas de arquivos: netapp ontap, openzfs, windows file server e lustre.
+
+EBS
+Armazenamento em bloco anexo à rede para uso com as instancias EC2
+*persistente independente da instancia
+*usado como um disco rigido
+*replicação automatica
+*anexado a qualquer intancia na mesma AZ
+*um volume do ebs para a instancia do EC2
+*uma instancia para varios volumes do EBS
+*os volumes do EBS podem reter dados apos o encerramento da instancia do EC2
+*permte snapshots pontuais para ingrementos de GIB do S3
+
+S3
+dimendionamento infinito, maior analise e recuperaão de dados mais rapida.
+armazenamentos de objetos altamente dimensionaveis com 11 noves de durablidade e quatro de disponibilidade
+
+casos de uso comum:
+*data lakes
+*backup e armazenamento
+*hospedaem de aplicativos
+*hospedagem de midia
+*entrega de software
+
+ categorias:
+Amazon S3 Standard (dados ativos)
+Amazon S3 Standard-Infrequent Access
+Amazon S3 Onde Zone - Infrequent Access
+S3 Glacier storage classes (dados arquivados)
+
+BANCO DE DADOS	
+desenvolvido especificamente para casos de uso de aplicativos especificos
+descarregar tarefas de gerenciamento demoradas
+Amazon RDS - é um serviço de banco de dados gerenciado com um opção de seis mecanismos populares de banco de dados.
+possui capacidade economica e redimensionavel.
+Amazon DynamoDB - desempenho rapido e previsivel.
+Amazon ElastiCache - recuperação rapida e gerenciada de informações.
+
+Serviço de banco de dados da AWS
+*facil de configurar, gerenciar e manter
+*reduza o trabalho pesado generico
+*alta disponibilidade com o clique de um botão
+*backuo/recuperação automatica
+*aumento ou redução vertical da escala com base no padrão
+
+Banco de dados do Amazon EC2
+*mais controle/flexibilidade
+*acesso ao sistema operacional
+*precisa de recursos de aplicativos especificos
+
+REDES
+isole a infraestrutura e dimensione a capacidade de resposta a solicitações
+
+Amazon VPC - crie uma rede virtual na nuvem
+Grupos de segurança - controle o acesso às instancias
+Listas de controle de acesso de rede - controle do acessp as dub-redes
+Amazon Route 53 - direcione ususarios finais para aplicativos na internet
+
+VPC
+*camadas de redes para recursos da AWS
+*uma rede virtual dedicada a conta da AWS de cliente
+
+Sub-rede:
+*um intervalo de endereços IP em uma VPC
+
+Listas de controle de acesso da rede: trafego de controle no nivel sub-rede
+frupos de segurança: trafego de controle no nivel da instancia
+Logs de fluxo: captura informações de fluxo  de rede
+Firewalls baseados em host: firewalls do sistema operacional
+
+SEGURANÇA
+A segurnaça na nunvem é a maior prioridade da aws
+
+*beneficios da herança do data center e da arquitetura de rede da AWS
+*semelhante aos data center locais, sem manutenção de intalações e hardware
+*pode ser facilmente automatixado
+*herda todas as praticas recomendadas da aws
+
+AWS é projetada para ajudar a desencolver uma infraestrutura segura resiliente , eficiete e de alto desenpenho para os aplicativos
+proteção de infraestrutura -
+identity and access management - permite que clientes gerenciem com segurança identidades, recursos e permissões de grande escala.
+detecção
+proteção de dados -  protege dados de contas e caragas de trabalho contra o acesso não autorizado
+conformidade
+resposta a incidente
+
+A AWS é responsavel pela segurança da nuvem
+os clintes e parceros da APN são responsaveis pela seguranla a nuvem
+
+IAM permite que gerencie com segurança o acesso aos serviços e recursos da aws
+control de acessso minucioso para seus recursos da aws
+autenticação multifator
+a capacidade de analisar o acesso
+integração com diretorios corporativos
+
+
+compartilhamento de informaçoes
+*certificações do setor
+*praticas de segurannça e controle
+* relatorios de conformidade diretamente no NDA
+
+Programas de garantia
+* certificações e declarações
+* leis, regulamentos e privacidade
+* alinhamentos e frameworks
+
+
+INTRODUÇÃO AO PROJETO DA SOLUÇÃO
+
+Estrategias de migração
+
+os sete R
+*re-hospedar - lift and shift
+	*recriação da rede on-premises, hospedada somente na AWS
+	*automatização com ferramentas como o AWS Application Migration Service
+	*mais facil otimizar e projetar aplicativos após a migração
+*redefinir plataforma - lift,tinker ans shift
+	*retenção da arquitetura principal
+	*como fazer otimizações direciionadas para a nuvem AWS
+*realocar - lift and shift no nível do hypervisor
+	*migração especifica para VMware CLoud on AWS
+*refatorar - modernizar
+	*reimaginar como o aplicativo é arquitetado e desenvolvido
+	*uso de recursos nativos da nuvem
+^^^^ representam migração de cargas de trabalho para a nuvem
+*retirar
+	*desativação de aplicativos inuteis
+	*que reduzem a velocidade, o gerenciamento e a segurança
+*reter
+	*manter determinados aplicativos on-premises
+*recomprar
+	*mover fluxos de trabalho para software como serviço(SaaS)
+
+Praticas recomendadas de arquitetura na nuvem
+
+*faça um design à prova de falhas e nada vai falhar
+	*evitar pontos unicos de falhas
+	*varias instancias
+	*varias zonas de disponibilidade
+	*separe um unico servidos em varios aplicativos em camadas
+	*para amazon RDS, use o recurso Multi-AZ
+*crie segurança em cada camada
+	*criptografe dados em repouse e em transito
+	*aplique o principio de menor privilegio no IAM
+	*implemente grupos de segurança e listas de cotrole de acesso à rede(NACL)
+	*considere recursos e serviços avançados de segurança
+*aproveite diferentes opções de armazenamento
+	*mova ativos estaticos da web para amazon S3
+	*use amazon cloudfront para servir globalmente
+	*armazene o estado da sessão no DynamoDB
+	*use elastiCache entre hosts e branco de dados
+*implementar a elasticidade
+	*implemente politicas de auto scaling
+	*arquitete resiliencia para reinicializar e realencar
+	*use serviços gerenciados como amazon s3 e o amazon dynamodb
+*pense paralelo
+	*dimencione horizontamente
+	*desacople a computação da sessão/estado
+	*use o elastic load balancing
+	*dimencione corretamentte a infraestrutura
+*o acoplamento fraco liberta você
+	*em vez de unico fluxo de trabalho ordenado, use varias filas
+	*use amazon simple queue service e o simple notification service
+	*aproveite os serviços exixtentes
+*não tema restrições
+	*repense retrições tradicionais
+
+O AWS Well-Architected Framework
+
+uma estrutura para garantir que as infraestruturas sejam: 
+*seguras
+*de alto desempenho
+*resilientes
+*eficientes
+*sustentaveis
+
+praticas desenvolvidas por meio da revisão das arquiteturas dos clientes na AWS
+um abordagem sistematica para avaliar e implementar arquiteturas
+well-architected toll no cosole
+
+seis pilares
+*excelencia operacional - se concentra em executar e monitorar sistemas para entregar valr empresarial
+*segurança - tem foco de proteger informação e sistemas
+*confiabilidade - foca na capacidade de evitar e se recuperar rapidamente das falhas
+*eficiencia de esempenho - se concentra no uso eficiente de recursos de TI e computação
+*otimização de custos - foca em evitar gastos desnecessarios
+*sustentabilidade - minimizar os impactos ambientais da execuão das cargas de trabalho na nuvem
+
+APRESENTAÇÃO DE SOLUÇÕES
+
+As conversas voltadas para o cliente se enquadram em três categorias distintas, com base em marcos típicos do ciclo de vendas.
+
+*descoberta é a reunião de coleta de informações para ajudar você a compreender os desafios dos clientes.
+*Depois que todas as informações necessárias que identificam as metas e os pontos problemáticos do cliente forem coletadas, você se reunirá com o cliente novamente para apresentar suas descobertas e propor uma ou mais soluções da AWS. Na verdade, isso pode acabar se tornando várias reuniões, dependendo da necessidade de ajustes na solução.
+*Assim que o cliente concordar com uma solução em potencial, você perguntará se ele gostaria de avançar com uma prova de conceito (POC), na qual avaliará a solução em seu próprio ambiente. 
+
+
+praticas recomendadas para lidar com objeções
+*abordagem orientada por dados
+*estudos de caso de uso
+*conhecer a questão mais a fundo
+*ter firmeza
+*manter o ritmo
+
+princiios basicos da poc
+*exemplo pratico da solução
+*mecanismo de avaliação
+*ferramenta educacional
+
+Processo de migração
+
+Avaliação
+*identificar a preparação
+*identificar possiveis resultados comerciais
+
+Preparação e planejamento
+*analisar o ambiente
+*determinar estrategias de migração
+*criar uma landing zone bem arquitetada
+
+Migração e modernização
+*projetar, migrar e validar cada aplicativo
+*autimatica ou manual
+*migrar dados
+
+conteineres
+*empacotam codigos, configurações e dependencias em um unico objeto
+*compartilham um sistema operacional
+*executam como processos isolados de recursos
+*a aws oferece recursos e serviços de orquestração
+
+casos de uso
+*microsserviços
+*processamento em batch
+*machine learning
+*aplicativos hibridos
+*mifração de aplicativos para a nivem
+*plataforma como serviço
+
+sem servidor
+beneficios
+*sem provisionamento, manutenção e administração de servidores
+*a aws lida com tolerancia a falhas e disponibilidade
+*foco na inovaçõ de produtos
+
+APN
+
+beneficios
+*aproveite a inovação da aws
+*acesse ferramentas e recursos
+*expanda o mercado acessivel
+
+distribua mais inovação
+adquira treinamento e certificação
+promova sua empresa
+valide sua experiencia
+maximize oportunidades com a aws
+aumente visibilidade para as equipes de campo da aws e clientes da aws
+economixe tempo e dinheiro com ferramenras e recursos
+
+roteiros para aws partner
+
+roteiro de software
+roteiro de hardware
+roteiro de serviços
+roteiro de treinamento
+roteiro de ditribuição
