@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "html-pdf": "^3.0.1",
+    "nodemailer": "^6.9.1",
+    "supertest": "^6.3.3"
+  }
+}
